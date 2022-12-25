@@ -18,13 +18,13 @@ def lz77(string: str):
                 shift = i - j
                 length = temp_length
 
-        print(''.join(x for x in search_buffer))
+        # print(''.join(x for x in search_buffer))
         search_buffer.extend(list(resource[i: i + length + 1]))
         result.append(tuple([shift, length, resource[i + length]]))
 
         i += length + 1
 
-    print(string)
-    result.append('-')
+    # print(string)
+    # result.append('-')
 
     return result
